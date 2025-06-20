@@ -1,6 +1,10 @@
 header {
     width: 100%;
     padding: 28 px 8%;
+    position: sticky;
+    top: 0;
+    background-color: #fff9ea;
+    z-index: 3;
 }
 #navbar {
     width: 100%;
@@ -29,10 +33,9 @@ header {
 .nav-item.active a {
     color: #FF9A2E;
     border-bottom: 3px solid #F28F16;
-    text-decoration: underline;
 }
 
-.mobile-nav {
+#mobile_btn {
     display: none;
 }
 
