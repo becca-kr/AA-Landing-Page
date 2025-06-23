@@ -46,12 +46,6 @@
   white-space: nowrap;
 }
 
-#cta .buttons a.btn-default {
-    text-decoration: none;
-    color: #F25C78;
-    white-space: nowrap;
-}
-
 #phone_button {
     display: flex;
     gap: 8px;
@@ -62,10 +56,6 @@
     font-weight: 500;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
-}
-
-#phone_button button {
-    box-shadow: none;
 }
 
 #banner {
@@ -104,11 +94,11 @@
 
 @media screen and (max-width: 1440px) {
     #home {
-        height: 100%;
-        padding-top: 0px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-top: 0;
+        height: 100%;
     }
 
     #cta {
@@ -129,69 +119,18 @@
     .shape {
         width: 90%;
         height: 100%;
-        z-index: -1;
     }
+
     #cta_buttons {
-        width: 100%;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        width: 100%;
     }
 
     #cta_buttons .btn-default {
         width: 100%;
-        justify-content: center;
         max-width: 300px;
-    }
-
-    #phone_button {
-        width: 100%;
         justify-content: center;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    #home {
-        padding: 0;
-        height: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #cta {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    #banner {
-        width: 100%;
-        justify-content: center;
-    }
-
-    #banner img {
-        width: 100%;
-        height: auto;
-    }
-
-    .shape {
-        width: 100%;
-        height: 40%;
-        z-index: -1;
-    }
-
-    #cta_buttons {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #cta_buttons .btn-default {
-        width: 100%;
-        justify-content: center;
-        max-width: 300px;
     }
 
     #phone_button {
@@ -212,22 +151,21 @@
     #cta .subtitle {
         font-size: 0.9rem;
     }
+}
 
-    #cta_buttons {
+@media screen and (max-width: 450px) {
+    #banner {
         width: 100%;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
     }
 
-     #cta_buttons .btn-default {
+    #banner img {
         width: 100%;
-        justify-content: center;
-        max-width: 300px;
+        height: auto;
     }
 
-    #phone_button {
+    .shape {
         width: 100%;
-        justify-content: center;
+        height: 40%;
     }
 }
